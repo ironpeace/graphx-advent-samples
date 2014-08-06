@@ -1,0 +1,14 @@
+run
+console
+import org.apache.spark._
+import org.apache.spark.graphx._
+import org.apache.spark.rdd.RDD
+console
+run
+clean
+run
+console
+run
+console
+run
+console
