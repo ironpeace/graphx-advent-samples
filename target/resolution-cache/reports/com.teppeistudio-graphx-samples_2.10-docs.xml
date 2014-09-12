@@ -6,8 +6,8 @@
 		module="graphx-samples_2.10"
 		revision="0.1-SNAPSHOT"
 		conf="docs"
-		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20140806124359"/>
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20140910181552"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

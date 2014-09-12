@@ -4,7 +4,7 @@
 		module="graphx-samples_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20140806124359"
+		publication="20140910181552"
 	>
 		<description>
 		graphx-samples
@@ -23,6 +23,7 @@
 		<conf name="sources" visibility="public" description=""/>
 		<conf name="docs" visibility="public" description=""/>
 		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
 	</configurations>
 	<publications>
 		<artifact name="graphx-samples_2.10" type="pom" ext="pom" conf="pom"/>
@@ -31,12 +32,9 @@
 		<artifact name="graphx-samples_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.10.2" conf="compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.3" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.3" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.10" rev="0.9.1" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-graphx_2.10" rev="0.9.1" conf="compile->default(compile)"/>
-		<exclude org="org.scala-lang" module="scala-library" artifact="*" type="jar" ext="*" matcher="exact"/>
-		<exclude org="org.scala-lang" module="scala-compiler" artifact="*" type="jar" ext="*" matcher="exact"/>
-		<override org="org.scala-lang" module="scala-library" matcher="exact" rev="2.10.2"/>
-		<override org="org.scala-lang" module="scala-compiler" matcher="exact" rev="2.10.2"/>
 	</dependencies>
 </ivy-module>
