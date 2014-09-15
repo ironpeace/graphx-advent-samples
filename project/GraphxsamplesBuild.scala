@@ -10,7 +10,7 @@ object GraphxsamplesBuild extends Build {
       name := "graphx-samples",
       organization := "com.teppeistudio",
       version := "0.1-SNAPSHOT",
-      scalaVersion := "2.10.3",
+      scalaVersion := "2.10.4",
 
       // add other settings here
       libraryDependencies += "org.apache.spark" %% "spark-core" % "0.9.1",

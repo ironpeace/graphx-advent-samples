@@ -4,7 +4,7 @@
 		module="graphx-samples_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20140910181552"
+		publication="20140913234313"
 	>
 		<description>
 		graphx-samples
@@ -32,8 +32,8 @@
 		<artifact name="graphx-samples_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.3" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.10.3" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.4" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.10" rev="0.9.1" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-graphx_2.10" rev="0.9.1" conf="compile->default(compile)"/>
 	</dependencies>
