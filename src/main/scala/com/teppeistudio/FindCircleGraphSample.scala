@@ -15,13 +15,18 @@ object FindCircleGraphSample {
 		val graph = GraphLoader.edgeListFile(sc, "graphdata/find_circle_graph_sample.tsv").cache()
 		graph.vertices.collect.foreach(println(_))
 
-		val graph2 = graph.mapVertices((id, attr) => List[VertexId]())			// Vertexに空のリストを持たせる
+		// Vertexに空のリストを持たせる
+		val graph2 = graph.mapVertices((id, attr) => Set[VertexId]())
 		graph2.vertices.collect.foreach(println(_))
 
-		val graph3 = Pregel(graph2, List[VertexId](), 4, EdgeDirection.Out) (	// 4階層以内で還流しているところを探す
-			(id, attr, msg) => (msg ::: attr).distinct, 						// 自分のリストと、渡って来たリストを合体させる
-			edge => Iterator((edge.dstId, (edge.srcId +: edge.srcAttr))), 		// Srcが持っているリストにSrcのIDを追加してDstに渡す
-			(a, b) => (a ::: b).distinct										// 複数Dstから送られて来たリストを合体させる
+		// 4階層以内で還流しているところを探す
+		val graph3 = Pregel(graph2, Set[VertexId](), 4, EdgeDirection.Out) (
+			// 自分のリストと、渡って来たリストを合体させる
+			(id, attr, msg) => (msg ++ attr),
+			// Srcが持っているリストにSrcのIDを追加してDstに渡す
+			edge => Iterator((edge.dstId, (edge.srcAttr + edge.srcId))),
+			// 複数Dstから送られて来たリストを合体させる
+			(a, b) => (a ++ b)		
 		)
 		graph3.vertices.collect.foreach(println(_))
 

@@ -1,0 +1,158 @@
+Loading /Users/teppei_tosa/Apps/sbt/bin/sbt-launch-lib.bash
+[0m[[0minfo[0m] [0mLoading project definition from /Users/teppei_tosa/dev/spark/graphx-samples/project[0m
+[0m[[0minfo[0m] [0mSet current project to graphx-samples (in build file:/Users/teppei_tosa/dev/spark/graphx-samples/)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/teppei_tosa/dev/spark/graphx-samples/target/scala-2.10/classes...[0m
+
+Multiple main classes detected, select one to run:
+
+ [1] com.teppeistudio.FindCircleGraphSample
+ [2] com.teppeistudio.Graphxsamples
+
+Enter number: 2
+
+[0m[[0minfo[0m] [0mRunning com.teppeistudio.Graphxsamples [0m
+
+
+~~~~~~~~~ Confirm Edges Internal of graph 
+Edge(0,1,1)
+Edge(1,2,1)
+Edge(2,3,1)
+Edge(2,4,1)
+Edge(3,4,1)
+Edge(4,1,1)
+Edge(4,6,1)
+Edge(5,1,1)
+Edge(6,5,1)
+Edge(6,7,1)
+Edge(7,8,1)
+
+
+~~~~~~~~~ Confirm Vertices Internal of graph 
+(4,1)
+(0,1)
+(1,1)
+(6,1)
+(3,1)
+(7,1)
+(8,1)
+(5,1)
+(2,1)
+
+
+~~~~~~~~~ Confirm Vertices Internal of graph2 
+(4,Shiro)
+(0,Reiji)
+(1,Taro)
+(6,Rock)
+(3,Saburo)
+(7,Nanami)
+(8,Yasuke)
+(5,Goro)
+(2,Jiro)
+
+
+~~~~~~~~~ Confirm who taro follows
+(2,Jiro)
+
+
+~~~~~~~~~ Confirm who follows taro 
+(0,Reiji)
+(4,Shiro)
+(5,Goro)
+
+
+~~~~~~~~~ Confirm who taro connects 
+(0,Reiji)
+(2,Jiro)
+(4,Shiro)
+(5,Goro)
+
+
+~~~~~~~~~ Confirm who is followed by max people 
+Taro is followed by 3 people
+
+
+~~~~~~~~~ Confirm who follows max people 
+Jiro follows 2 people
+
+
+~~~~~~~~~ Confirm who connects with max people 
+Taro connected with 4 people
+
+
+~~~~~~~~~ Confirm who connects with taro in depth 3 
+(4,2)
+(0,2)
+(1,3)
+(6,1)
+(3,1)
+(7,0)
+(5,2)
+(2,2)
+
+
+~~~~~~~~~ Confirm who belongs to friends circle in depth 3
+(4,Set(0, 5, 1, 2, 3, 4))
+(1,Set(0, 5, 1, 6, 2, 3, 4))
+(2,Set(0, 5, 1, 6, 2, 3, 4))
+
+
+~~~~~~~~~ Confirm who belongs to friends circle in depth 4
+(4,Set(0, 5, 1, 6, 2, 3, 4))
+(1,Set(0, 5, 1, 6, 2, 3, 4))
+(3,Set(0, 5, 1, 6, 2, 3, 4))
+(2,Set(0, 5, 1, 6, 2, 3, 4))
+
+
+~~~~~~~~~ Confirm who belongs to friends circle in depth 5
+(4,Set(0, 5, 1, 6, 2, 3, 4))
+(1,Set(0, 5, 1, 6, 2, 3, 4))
+(6,Set(0, 5, 1, 6, 2, 3, 4))
+(3,Set(0, 5, 1, 6, 2, 3, 4))
+(5,Set(0, 5, 1, 6, 2, 3, 4))
+(2,Set(0, 5, 1, 6, 2, 3, 4))
+
+
+~~~~~~~~~ Confirm Edges Internal of graph3 
+Edge(0,1,10000)
+Edge(1,2,20000)
+Edge(2,3,30000)
+Edge(2,4,10000)
+Edge(3,4,40000)
+Edge(4,1,20000)
+Edge(4,6,16000)
+Edge(5,1,30000)
+Edge(6,5,50000)
+Edge(6,7,17000)
+Edge(7,8,18000)
+
+
+~~~~~~~~~ Confirm Vertices Internal of graph3 
+(4,Shiro)
+(0,Reiji)
+(1,Taro)
+(6,Rock)
+(3,Saburo)
+(7,Nanami)
+(8,Yasuke)
+(5,Goro)
+(2,Jiro)
+
+
+~~~~~~~~~ Confirm triplets Internal of graph3 
+((0,Reiji),(1,Taro),10000)
+((1,Taro),(2,Jiro),20000)
+((2,Jiro),(3,Saburo),30000)
+((2,Jiro),(4,Shiro),10000)
+((3,Saburo),(4,Shiro),40000)
+((4,Shiro),(1,Taro),20000)
+((4,Shiro),(6,Rock),16000)
+((5,Goro),(1,Taro),30000)
+((6,Rock),(5,Goro),50000)
+((6,Rock),(7,Nanami),17000)
+((7,Nanami),(8,Yasuke),18000)
+
+
+~~~~~~~~~ Confirm who is sended max money 
+Taro is sended max money(60000)
+[0m[[32msuccess[0m] [0mTotal time: 42 s, completed 2014/09/22 16:15:58[0m
