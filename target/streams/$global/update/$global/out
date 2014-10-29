@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@58f4c4e8[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@723c668e[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
@@ -1942,7 +1942,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.6!paranamer.pom(pom.original) (1526ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.6!paranamer.pom(pom.original) (669ms)[0m
 [0m[[0minfo[0m] [0mResolving com.thoughtworks.paranamer#paranamer-parent;2.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.thoughtworks.paranamer#paranamer-parent;2.6 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer-parent;2.6[0m
@@ -2533,13 +2533,11 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-sql_2.10;1.1.0!spark-sql_2.10.pom(pom.original) (851ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-sql_2.10;1.1.0!spark-sql_2.10.pom(pom.original) (662ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent;1.1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.1.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.1.0[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.spark#spark-parent;1.1.0[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/org.apache.spark/spark-sql_2.10/1.1.0/jars/spark-sql_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.jar[0m
 [0m[[0mdebug[0m] [0m	found org.apache.spark#spark-sql_2.10;1.1.0 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT->org.apache.spark#spark-sql_2.10;1.1.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT->org.apache.spark#spark-sql_2.10;1.1.0 [compile->compile][0m
@@ -2547,24 +2545,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-sql_2.10;1.1.0->org.apache.spark#spark-core_2.10;1.1.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-sql_2.10;1.1.0->org.apache.spark#spark-catalyst_2.10;1.1.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-catalyst_2.10;1.1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d928345[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/org.apache.spark/spark-catalyst_2.10/1.1.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.spark#spark-catalyst_2.10;1.1.0[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache.spark#spark-catalyst_2.10;1.1.0[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.pom (1.1.0)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-catalyst_2.10;1.1.0!spark-catalyst_2.10.pom(pom.original) (1382ms)[0m
-[0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent;1.1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.1.0 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.1.0[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.spark#spark-parent;1.1.0[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/org.apache.spark/spark-catalyst_2.10/1.1.0/jars/spark-catalyst_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.jar[0m
-[0m[[0mdebug[0m] [0m	found org.apache.spark#spark-catalyst_2.10;1.1.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cc160d9[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-catalyst_2.10;1.1.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.spark#spark-catalyst_2.10;1.1.0[0m
+[0m[[0mdebug[0m] [0m	found org.apache.spark#spark-catalyst_2.10;1.1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-sql_2.10;1.1.0->org.apache.spark#spark-catalyst_2.10;1.1.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.1.0->org.scala-lang#scala-compiler;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.1.0->org.scala-lang#scala-compiler;2.10.4 [compile->compile(*)][0m
@@ -2573,19 +2557,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.1.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scalamacros#quasiquotes_2.10;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalamacros#quasiquotes_2.10;2.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/org.scalamacros/quasiquotes_2.10/2.0.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scalamacros#quasiquotes_2.10;2.0.1[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.scalamacros#quasiquotes_2.10;2.0.1[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom (2.0.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.pom(pom.original) (853ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/org.scalamacros/quasiquotes_2.10/2.0.1/jars/quasiquotes_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scalamacros#quasiquotes_2.10;2.0.1 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalamacros#quasiquotes_2.10;2.0.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scalamacros#quasiquotes_2.10;2.0.1[0m
+[0m[[0mdebug[0m] [0m	found org.scalamacros#quasiquotes_2.10;2.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.1.0->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
@@ -2619,92 +2593,35 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-column;1.4.3!parquet-column.pom(pom.original) (1559ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-column;1.4.3!parquet-column.pom(pom.original) (1143ms)[0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet;1.4.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet;1.4.3 {}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet/1.4.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet/1.4.3/parquet-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/twitter/parquet/1.4.3/parquet-1.4.3.pom (1.4.3)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet/1.4.3/parquet-1.4.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet/1.4.3/parquet-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet/1.4.3/parquet-1.4.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet/1.4.3/parquet-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet;1.4.3!parquet.pom(pom.original) (2365ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet/1.4.3/jars/parquet.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet/1.4.3/parquet-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/twitter/parquet/1.4.3/parquet-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.akka.io/releases/com/twitter/parquet/1.4.3/parquet-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.akka.io/releases/com/twitter/parquet/1.4.3/parquet-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-column/1.4.3/jars/parquet-column.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.jar[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet;1.4.3[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet;1.4.3[0m
 [0m[[0mdebug[0m] [0m	found com.twitter#parquet-column;1.4.3 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-sql_2.10;1.1.0->com.twitter#parquet-column;1.4.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-column;1.4.3->com.twitter#parquet-common;1.4.3 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet-common;1.4.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet-common;1.4.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-common/1.4.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.twitter#parquet-common;1.4.3[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.twitter#parquet-common;1.4.3[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.pom (1.4.3)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-common;1.4.3!parquet-common.pom(pom.original) (837ms)[0m
-[0m[[0minfo[0m] [0mResolving com.twitter#parquet;1.4.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet;1.4.3 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-common/1.4.3/jars/parquet-common.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m	found com.twitter#parquet-common;1.4.3 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet-common;1.4.3[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet-common;1.4.3[0m
+[0m[[0mdebug[0m] [0m	found com.twitter#parquet-common;1.4.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-column;1.4.3->com.twitter#parquet-common;1.4.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-column;1.4.3->com.twitter#parquet-encoding;1.4.3 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet-encoding;1.4.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@218643d4[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-encoding/1.4.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.twitter#parquet-encoding;1.4.3[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.twitter#parquet-encoding;1.4.3[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.pom (1.4.3)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-encoding;1.4.3!parquet-encoding.pom(pom.original) (992ms)[0m
-[0m[[0minfo[0m] [0mResolving com.twitter#parquet;1.4.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet;1.4.3 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-encoding/1.4.3/jars/parquet-encoding.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m	found com.twitter#parquet-encoding;1.4.3 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62752dd0[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet-encoding;1.4.3[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet-encoding;1.4.3[0m
+[0m[[0mdebug[0m] [0m	found com.twitter#parquet-encoding;1.4.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-column;1.4.3->com.twitter#parquet-encoding;1.4.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-encoding;1.4.3->com.twitter#parquet-common;1.4.3 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-encoding;1.4.3->com.twitter#parquet-common;1.4.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-encoding;1.4.3->com.twitter#parquet-generator;1.4.3 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet-generator;1.4.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet-generator;1.4.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-generator/1.4.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.twitter#parquet-generator;1.4.3[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.twitter#parquet-generator;1.4.3[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.pom (1.4.3)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-generator;1.4.3!parquet-generator.pom(pom.original) (833ms)[0m
-[0m[[0minfo[0m] [0mResolving com.twitter#parquet;1.4.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet;1.4.3 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-generator/1.4.3/jars/parquet-generator.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m	found com.twitter#parquet-generator;1.4.3 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet-generator;1.4.3[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet-generator;1.4.3[0m
+[0m[[0mdebug[0m] [0m	found com.twitter#parquet-generator;1.4.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-encoding;1.4.3->com.twitter#parquet-generator;1.4.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-generator;1.4.3->com.twitter#parquet-common;1.4.3 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-generator;1.4.3->com.twitter#parquet-common;1.4.3 [compile->compile(*)][0m
@@ -2731,42 +2648,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-sql_2.10;1.1.0->com.twitter#parquet-hadoop;1.4.3 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet-hadoop;1.4.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet-hadoop;1.4.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-hadoop/1.4.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.twitter#parquet-hadoop;1.4.3[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.twitter#parquet-hadoop;1.4.3[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.pom (1.4.3)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-hadoop;1.4.3!parquet-hadoop.pom(pom.original) (1173ms)[0m
-[0m[[0minfo[0m] [0mResolving com.twitter#parquet;1.4.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet;1.4.3 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-hadoop/1.4.3/jars/parquet-hadoop.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m	found com.twitter#parquet-hadoop;1.4.3 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet-hadoop;1.4.3[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet-hadoop;1.4.3[0m
+[0m[[0mdebug[0m] [0m	found com.twitter#parquet-hadoop;1.4.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-sql_2.10;1.1.0->com.twitter#parquet-hadoop;1.4.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-hadoop;1.4.3->com.twitter#parquet-column;1.4.3 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-hadoop;1.4.3->com.twitter#parquet-column;1.4.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-hadoop;1.4.3->com.twitter#parquet-format;2.0.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet-format;2.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet-format;2.0.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-format/2.0.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.twitter#parquet-format;2.0.0[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.twitter#parquet-format;2.0.0[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.pom (2.0.0)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-format;2.0.0!parquet-format.pom(pom.original) (1040ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-format/2.0.0/jars/parquet-format.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.jar[0m
-[0m[[0mdebug[0m] [0m	found com.twitter#parquet-format;2.0.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet-format;2.0.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet-format;2.0.0[0m
+[0m[[0mdebug[0m] [0m	found com.twitter#parquet-format;2.0.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-hadoop;1.4.3->com.twitter#parquet-format;2.0.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-hadoop;1.4.3->com.twitter#parquet-jackson;1.4.3 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet-jackson;1.4.3 ...[0m
@@ -2780,48 +2673,26 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-jackson;1.4.3!parquet-jackson.pom(pom.original) (1092ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-jackson;1.4.3!parquet-jackson.pom(pom.original) (912ms)[0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet;1.4.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet;1.4.3 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet;1.4.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet;1.4.3[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/com.twitter/parquet-jackson/1.4.3/jars/parquet-jackson.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.jar[0m
 [0m[[0mdebug[0m] [0m	found com.twitter#parquet-jackson;1.4.3 in public[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-hadoop;1.4.3->com.twitter#parquet-jackson;1.4.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-hadoop;1.4.3->org.codehaus.jackson#jackson-mapper-asl;1.9.11 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.codehaus.jackson#jackson-mapper-asl;1.9.11 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.codehaus.jackson#jackson-mapper-asl;1.9.11 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/org.codehaus.jackson/jackson-mapper-asl/1.9.11/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.codehaus.jackson#jackson-mapper-asl;1.9.11[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.codehaus.jackson#jackson-mapper-asl;1.9.11[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom (1.9.11)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus.jackson#jackson-mapper-asl;1.9.11!jackson-mapper-asl.pom(pom.original) (1162ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/org.codehaus.jackson/jackson-mapper-asl/1.9.11/jars/jackson-mapper-asl.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar[0m
-[0m[[0mdebug[0m] [0m	found org.codehaus.jackson#jackson-mapper-asl;1.9.11 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.codehaus.jackson#jackson-mapper-asl;1.9.11[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.codehaus.jackson#jackson-mapper-asl;1.9.11[0m
+[0m[[0mdebug[0m] [0m	found org.codehaus.jackson#jackson-mapper-asl;1.9.11 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-hadoop;1.4.3->org.codehaus.jackson#jackson-mapper-asl;1.9.11 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.11->org.codehaus.jackson#jackson-core-asl;1.9.11 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.codehaus.jackson#jackson-core-asl;1.9.11 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.codehaus.jackson#jackson-core-asl;1.9.11 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/org.codehaus.jackson/jackson-core-asl/1.9.11/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.codehaus.jackson#jackson-core-asl;1.9.11[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.codehaus.jackson#jackson-core-asl;1.9.11[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom (1.9.11)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus.jackson#jackson-core-asl;1.9.11!jackson-core-asl.pom(pom.original) (1169ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/teppei_tosa/.ivy2/local/org.codehaus.jackson/jackson-core-asl/1.9.11/jars/jackson-core-asl.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar[0m
-[0m[[0mdebug[0m] [0m	found org.codehaus.jackson#jackson-core-asl;1.9.11 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.codehaus.jackson#jackson-core-asl;1.9.11[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.codehaus.jackson#jackson-core-asl;1.9.11[0m
+[0m[[0mdebug[0m] [0m	found org.codehaus.jackson#jackson-core-asl;1.9.11 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.11->org.codehaus.jackson#jackson-core-asl;1.9.11 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.11->org.codehaus.jackson#jackson-core-asl;1.9.11 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.codehaus.jackson#jackson-mapper-asl;1.9.11->org.codehaus.jackson#jackson-core-asl;1.9.11 [compile->compile][0m
@@ -13350,12 +13221,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-core_2.10;1.1.0!spark-core_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-graphx_2.10;1.1.0!spark-graphx_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-sql_2.10;1.1.0!spark-sql_2.10.jar (22968ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-sql_2.10;1.1.0!spark-sql_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.hadoop#hadoop-client;1.0.4!hadoop-client.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.java.dev.jets3t#jets3t;0.7.1!jets3t.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.curator#curator-recipes;2.4.0!curator-recipes.jar(bundle)[0m
@@ -13443,75 +13309,20 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.tachyonproject#tachyon;0.5.0!tachyon.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-io#commons-io;2.4!commons-io.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jblas#jblas;1.2.3!jblas.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.10/1.1.0/spark-catalyst_2.10-1.1.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-catalyst_2.10;1.1.0!spark-catalyst_2.10.jar (40364ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-column;1.4.3!parquet-column.jar (16010ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.4.3/parquet-hadoop-1.4.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-hadoop;1.4.3!parquet-hadoop.jar (2154ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.jar (12717ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-common/1.4.3/parquet-common-1.4.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-common;1.4.3!parquet-common.jar (1238ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.4.3/parquet-encoding-1.4.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-encoding;1.4.3!parquet-encoding.jar (5925ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-generator/1.4.3/parquet-generator-1.4.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-generator;1.4.3!parquet-generator.jar (2675ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-format/2.0.0/parquet-format-2.0.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-format;2.0.0!parquet-format.jar (16293ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-jackson;1.4.3!parquet-jackson.jar (18624ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.codehaus.jackson#jackson-mapper-asl;1.9.11!jackson-mapper-asl.jar (17383ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.codehaus.jackson#jackson-core-asl;1.9.11!jackson-core-asl.jar (9360ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-catalyst_2.10;1.1.0!spark-catalyst_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#parquet-column;1.4.3!parquet-column.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#parquet-hadoop;1.4.3!parquet-hadoop.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#parquet-common;1.4.3!parquet-common.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#parquet-encoding;1.4.3!parquet-encoding.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#parquet-generator;1.4.3!parquet-generator.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#parquet-format;2.0.0!parquet-format.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#parquet-jackson;1.4.3!parquet-jackson.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.codehaus.jackson#jackson-mapper-asl;1.9.11!jackson-mapper-asl.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.11!jackson-core-asl.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 39467ms :: artifacts dl 165870ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 13070ms :: artifacts dl 190ms[0m
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT compile produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT runtime produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT test produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-test.xml[0m
@@ -13525,5 +13336,5 @@
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT docs produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT pom produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT scala-tool produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (39467ms resolve - 165870ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (13070ms resolve - 190ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

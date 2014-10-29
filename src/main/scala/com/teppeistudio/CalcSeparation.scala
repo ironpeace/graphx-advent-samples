@@ -20,7 +20,7 @@ object CalcSeparationSample {
 		val graph2 = graph.mapVertices((id, attr) => List[(VertexId, List[VertexId])]())
 		//graph2.vertices.collect.foreach(println(_))
 
-		// 4階層以内で還流しているところを探す
+		// 最大６階層以内の隔たりを計算する
 		val graph3 = Pregel(
 				graph2, 
 				List[(VertexId, List[VertexId])](), 
@@ -52,7 +52,7 @@ object CalcSeparationSample {
 				Iterator((edge.dstId, (edge.srcId, List(edge.srcId)) :: newAttr))
 			},
 
-			// 複数Dstから送られて来たリストを合体させる
+			// 複数から送られて来たリストを合体させる
 			(a, b) => (a ++ b)
 		)
 		
