@@ -1,18 +1,17 @@
-Loading /Users/teppei_tosa/Apps/sbt/bin/sbt-launch-lib.bash
-[0m[[0minfo[0m] [0mLoading project definition from /Users/teppei_tosa/dev/spark/graphx-samples/project[0m
-[0m[[0minfo[0m] [0mSet current project to graphx-samples (in build file:/Users/teppei_tosa/dev/spark/graphx-samples/)[0m
-[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/teppei_tosa/dev/spark/graphx-samples/target/scala-2.10/classes...[0m
+[0m[[0minfo[0m] [0mLoading project definition from /Users/ITPUser/dev/spark/graphx-samples/project[0m
+[0m[[0minfo[0m] [0mSet current project to graphx-samples (in build file:/Users/ITPUser/dev/spark/graphx-samples/)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/ITPUser/dev/spark/graphx-samples/target/scala-2.10/classes...[0m
 
 Multiple main classes detected, select one to run:
 
- [1] com.teppeistudio.CalcInfluenceSample
- [2] com.teppeistudio.FindCircleGraphSample
- [3] com.teppeistudio.Convert2TreeSample
- [4] com.teppeistudio.CalcSeparationSample_smart
- [5] com.teppeistudio.Graphxsamples
+ [1] com.teppeistudio.CalcSeparationSample_smart
+ [2] com.teppeistudio.CalcInfluenceSample
+ [3] com.teppeistudio.Graphxsamples
+ [4] com.teppeistudio.FindCircleGraphSample
+ [5] com.teppeistudio.Convert2TreeSample
  [6] com.teppeistudio.CalcSeparationSample
 
-Enter number: 1
+Enter number: 2
 
 [0m[[0minfo[0m] [0mRunning com.teppeistudio.CalcInfluenceSample [0m
 ~~~~~~~~~~ 愛のグラフ
@@ -44,8 +43,8 @@ Edge(1,3,100)
 Edge(2,3,100)
 ~~~~~~~~~~ 精算結果
 (1,(0,200,0,200))
-(3,(200,0,0,200))
-(2,(100,100,0,200))
+(3,(100,200,100,200))
+(2,(100,100,100,200))
 Edge(1,2,0.5)
 Edge(1,3,0.5)
 Edge(2,3,1.0)
@@ -63,17 +62,17 @@ Edge(1,3,100)
 Edge(2,3,100)
 Edge(1,0,1000000)
 ~~~~~~~~~~ 精算結果
-(0,(199,0,0,0))
-(2,(100,0,0,200))
-(1,(0,200,1000000,200))
-(3,(200,0,0,200))
+(0,(0,0,0,0))
+(2,(100,100,100,200))
+(1,(0,200,0,200))
+(3,(100,200,100,200))
 Edge(1,2,9.998E-5)
 Edge(1,3,9.998E-5)
 Edge(2,3,1.0)
 Edge(1,0,0.9998)
 ~~~~~~~~~~ 比較
-0 : 0 -> 199
+0 : 0 -> 0
 2 : 100 -> 100
 1 : 0 -> 0
-3 : 200 -> 200
-[0m[[32msuccess[0m] [0mTotal time: 19 s, completed 2014/10/30 21:58:52[0m
+3 : 100 -> 100
+[0m[[32msuccess[0m] [0mTotal time: 17 s, completed 2014/10/31 8:33:12[0m

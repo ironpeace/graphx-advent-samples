@@ -126,30 +126,43 @@ object CalcInfluenceSample {
 				// dstから愛を受け取ることで一時的に増加する愛のストック
 				val tmpStock = stock + msg
 
+				// その愛は、配らなければならない愛の量に足りているか？
+				val isEnough = if(tmpStock >= sum) true else false
+
 				// 愛を配った後、残る愛の量は？
 				// 受け取った愛とストックの愛が、配らなければならない愛の量より大きいのなら、
-				// 全てくばりきるので、残り愛の量は0.
-				// さもなければ、配りきれなかった愛が残る
-				val afterSum = Math.max(sum - tmpStock, 0)
+				// 配りきれなかった愛が残る
+				// さもなければ、全てくばりきるので、残り愛の量は0.
+				//val afterSum = Math.max(sum - tmpStock, 0)
+				val afterSum = if(isEnough) tmpStock - sum else 0
 
-				// これから配る愛の量は、配らなければならない愛の量か、配れる愛の量
-				val afterReady = Math.min(tmpStock, sum)
+				// これから配る愛の量は、
+				// 配らなければならない愛の量が、配れる愛の量を超えているのなら配れる愛の量、
+				// さもなければ、配れる量
+				//val afterReady = Math.min(tmpStock, sum)
+				val afterReady = if(isEnough) sum else tmpStock
 
 				// 残る愛のストックは、愛を配った後のストック
-				val afterStock = Math.max(tmpStock - sum, 0)
+				// val afterStock = Math.max(tmpStock - sum, 0)
+				val afterStock = if(isEnough) tmpStock - sum else 0
 
 				(afterStock, afterReady, afterSum, origin)
 			},
 
 			// それぞれの愛の関係において、どれだけの量の愛を配るか
 			edge => {
+				val stock = edge.srcAttr._1	// 愛のストック
+				val ready = edge.srcAttr._2	// 愛の準備
+				val sum = edge.srcAttr._3 // 配らなければならない愛の総量
+				val origin = edge.srcAttr._4 // 清算前の愛のストック
+				var rate = edge.attr // 愛の配分割合
 
-				if(edge.srcAttr._3 <= 0){
+				if(sum <= 0){
 					// 愛を配りきっているのであれば、何も配らない
 					Iterator.empty
 				}else{
 					// 配るべき愛があるのであれば、edge毎の割合で按分した愛を配る
-					val msg = edge.srcAttr._2 * edge.attr
+					val msg = stock * rate
 					Iterator((edge.dstId, msg.toLong))
 				}
 			},
