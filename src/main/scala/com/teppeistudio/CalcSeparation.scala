@@ -67,7 +67,7 @@ object CalcSeparationSample {
 		
 		//g4List.foreach(println(_))
 
-		// 辺単位の形に変形
+		// Edge単位の形に変形
 		val eList:Array[List[(String, Int)]] = 
 			for(g:(VertexId, List[(VertexId, Int)]) <- g4List) yield {
 				for(g2:(VertexId, Int) <- g._2) yield (g2._1 + " -> " + g._1, g2._2)
