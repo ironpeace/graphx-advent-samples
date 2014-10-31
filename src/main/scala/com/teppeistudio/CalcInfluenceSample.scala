@@ -77,10 +77,7 @@ object CalcInfluenceSample {
 
     }
 
-	// 課題
-	// 1と、同じConnectedConponentにいない人は、本来影響を全くうけない人のはずなのに、影響をうけているように見えてしまう
-	// 1とのout側に絶対に出てこない人は...（同上）
-
+    // 本処理
     def calcInfluence(graph:Graph[Long, Long]):Graph[(Long, Long, Long, Long), Float] = {
 
 		// 各々が隣人に愛の総量を算出
@@ -133,17 +130,14 @@ object CalcInfluenceSample {
 				// 受け取った愛とストックの愛が、配らなければならない愛の量より大きいのなら、
 				// 配りきれなかった愛が残る
 				// さもなければ、全てくばりきるので、残り愛の量は0.
-				//val afterSum = Math.max(sum - tmpStock, 0)
-				val afterSum = if(isEnough) tmpStock - sum else 0
+				val afterSum = if(isEnough) 0 else sum - tmpStock
 
 				// これから配る愛の量は、
 				// 配らなければならない愛の量が、配れる愛の量を超えているのなら配れる愛の量、
 				// さもなければ、配れる量
-				//val afterReady = Math.min(tmpStock, sum)
 				val afterReady = if(isEnough) sum else tmpStock
 
 				// 残る愛のストックは、愛を配った後のストック
-				// val afterStock = Math.max(tmpStock - sum, 0)
 				val afterStock = if(isEnough) tmpStock - sum else 0
 
 				(afterStock, afterReady, afterSum, origin)
@@ -157,12 +151,12 @@ object CalcInfluenceSample {
 				val origin = edge.srcAttr._4 // 清算前の愛のストック
 				var rate = edge.attr // 愛の配分割合
 
-				if(sum <= 0){
+				if(ready <= 0){
 					// 愛を配りきっているのであれば、何も配らない
 					Iterator.empty
 				}else{
 					// 配るべき愛があるのであれば、edge毎の割合で按分した愛を配る
-					val msg = stock * rate
+					val msg = ready * rate
 					Iterator((edge.dstId, msg.toLong))
 				}
 			},
