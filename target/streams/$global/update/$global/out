@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@723c668e[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e9cbd2f[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
@@ -1942,7 +1942,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.6!paranamer.pom(pom.original) (669ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.6!paranamer.pom(pom.original) (712ms)[0m
 [0m[[0minfo[0m] [0mResolving com.thoughtworks.paranamer#paranamer-parent;2.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.thoughtworks.paranamer#paranamer-parent;2.6 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer-parent;2.6[0m
@@ -2533,7 +2533,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.10/1.1.0/spark-sql_2.10-1.1.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-sql_2.10;1.1.0!spark-sql_2.10.pom(pom.original) (662ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-sql_2.10;1.1.0!spark-sql_2.10.pom(pom.original) (686ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent;1.1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;1.1.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent;1.1.0[0m
@@ -2545,7 +2545,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-sql_2.10;1.1.0->org.apache.spark#spark-core_2.10;1.1.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-sql_2.10;1.1.0->org.apache.spark#spark-catalyst_2.10;1.1.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-catalyst_2.10;1.1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cc160d9[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@37b1c132[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-catalyst_2.10;1.1.0[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.spark#spark-catalyst_2.10;1.1.0[0m
 [0m[[0mdebug[0m] [0m	found org.apache.spark#spark-catalyst_2.10;1.1.0 in sbt-chain[0m
@@ -2593,7 +2593,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-column/1.4.3/parquet-column-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-column;1.4.3!parquet-column.pom(pom.original) (1143ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-column;1.4.3!parquet-column.pom(pom.original) (1186ms)[0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet;1.4.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet;1.4.3 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet;1.4.3[0m
@@ -2609,7 +2609,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-column;1.4.3->com.twitter#parquet-common;1.4.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.twitter#parquet-column;1.4.3->com.twitter#parquet-encoding;1.4.3 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet-encoding;1.4.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62752dd0[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c8571f9[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet-encoding;1.4.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.twitter#parquet-encoding;1.4.3[0m
 [0m[[0mdebug[0m] [0m	found com.twitter#parquet-encoding;1.4.3 in sbt-chain[0m
@@ -2673,7 +2673,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.4.3/parquet-jackson-1.4.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-jackson;1.4.3!parquet-jackson.pom(pom.original) (912ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.twitter#parquet-jackson;1.4.3!parquet-jackson.pom(pom.original) (688ms)[0m
 [0m[[0minfo[0m] [0mResolving com.twitter#parquet;1.4.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.twitter#parquet;1.4.3 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.twitter#parquet;1.4.3[0m
@@ -13322,7 +13322,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.11!jackson-core-asl.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 13070ms :: artifacts dl 190ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 13822ms :: artifacts dl 124ms[0m
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT compile produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT runtime produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT test produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-test.xml[0m
@@ -13336,5 +13336,5 @@
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT docs produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT pom produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.teppeistudio#graphx-samples_2.10;0.1-SNAPSHOT scala-tool produced in /Users/teppei_tosa/dev/spark/graphx-samples/target/resolution-cache/reports/com.teppeistudio-graphx-samples_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (13070ms resolve - 190ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (13822ms resolve - 124ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

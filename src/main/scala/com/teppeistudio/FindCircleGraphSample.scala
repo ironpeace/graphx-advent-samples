@@ -12,7 +12,7 @@ object FindCircleGraphSample {
 
 		val conf = new SparkConf()
 		val sc = new SparkContext("local", "test", conf)
-		val graph = GraphLoader.edgeListFile(sc, "graphdata/find_circle_graph_sample.tsv").cache()
+		val graph = GraphLoader.edgeListFile(sc, "graphdata/find_circle_graph_sample_2.tsv").cache()
 		graph.vertices.collect.foreach(println(_))
 
 		// Vertexに空のリストを持たせる
@@ -28,9 +28,11 @@ object FindCircleGraphSample {
 			// 複数Dstから送られて来たリストを合体させる
 			(a, b) => (a ++ b)		
 		)
+		println("~~~~~~~~~~~~~~~~ Pregel処理結果")
 		graph3.vertices.collect.foreach(println(_))
 
 		val graph4 = graph3.subgraph(vpred = (id, attr) => attr.contains(id))	// リストに自分のIDが入っているVertexが還流Vertex
+		println("~~~~~~~~~~~~~~~~ リストに自分のIDが入っているVertexが還流Vertex")
 		graph4.vertices.collect.foreach(println(_))
 
 		sc.stop
