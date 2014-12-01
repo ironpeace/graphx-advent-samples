@@ -1,22 +1,63 @@
 Loading /Users/teppei_tosa/Apps/sbt/bin/sbt-launch-lib.bash
-[0m[[0minfo[0m] [0mLoading project definition from /Users/teppei_tosa/dev/spark/graphx-samples/project[0m
-[0m[[0minfo[0m] [0mSet current project to graphx-samples (in build file:/Users/teppei_tosa/dev/spark/graphx-samples/)[0m
+[0m[[0minfo[0m] [0mLoading project definition from /Users/teppei_tosa/dev/spark/graphx-advent-samples/project[0m
+[0m[[0minfo[0m] [0mSet current project to graphx-advent-samples (in build file:/Users/teppei_tosa/dev/spark/graphx-advent-samples/)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/teppei_tosa/dev/spark/graphx-advent-samples/target/scala-2.10/classes...[0m
 
 Multiple main classes detected, select one to run:
 
- [1] com.teppeistudio.CreateSampleGraph
- [2] com.teppeistudio.CalcInfluenceSample
- [3] com.teppeistudio.FindCircleGraphSample
- [4] com.teppeistudio.Convert2TreeSample
- [5] com.teppeistudio.CalcSeparationSample_smart
- [6] com.teppeistudio.Graphxsamples
- [7] com.teppeistudio.CalcSeparationSample
+ [1] com.teppeistudio.Day04_01
+ [2] com.teppeistudio.Day02_02
+ [3] com.teppeistudio.Day01
+ [4] com.teppeistudio.Day03_01
+ [5] com.teppeistudio.Day02_01
 
 Enter number: 1
 
-[0m[[0minfo[0m] [0mRunning com.teppeistudio.CreateSampleGraph [0m
-java.lang.RuntimeException: Nonzero exit code: 1
-	at scala.sys.package$.error(package.scala:27)
-[0m[[31mtrace[0m] [0mStack trace suppressed: run [34mlast compile:run[0m for the full output.[0m
-[0m[[31merror[0m] [0m(compile:[31mrun[0m) Nonzero exit code: 1[0m
-[0m[[31merror[0m] [0mTotal time: 2 s, completed 2014/11/03 21:27:33[0m
+[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day04_01 [0m
+
+
+~~~~~~~~~ Confirm Vertices Internal of graph 
+(1,(Taro,100))
+(3,(Sabo,300))
+(2,(Jiro,200))
+
+
+~~~~~~~~~ Confirm Edges Internal of graph 
+Edge(1,2,(100,Mon Dec 01 00:00:00 JST 2014))
+Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
+Edge(3,1,(300,Wed Dec 03 00:00:00 JST 2014))
+
+
+~~~~~~~~~ Confirm Edges reversed graph 
+Edge(1,3,(300,Wed Dec 03 00:00:00 JST 2014))
+Edge(2,1,(100,Mon Dec 01 00:00:00 JST 2014))
+Edge(3,2,(200,Tue Dec 02 00:00:00 JST 2014))
+
+
+~~~~~~~~~ Confirm Subgraphed vertices graph 
+(3,(Sabo,300))
+(2,(Jiro,200))
+
+
+~~~~~~~~~ Confirm Subgraphed edges graph 
+Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
+Edge(3,1,(300,Wed Dec 03 00:00:00 JST 2014))
+
+
+~~~~~~~~~ Confirm Subgraphed vertices graph 
+(3,(Sabo,300))
+(2,(Jiro,200))
+
+
+~~~~~~~~~ Confirm Subgraphed edges graph 
+Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
+
+
+~~~~~~~~~ Confirm Masked Graph vertices graph 
+(3,(Sabo,300))
+(2,(Jiro,200))
+
+
+~~~~~~~~~ Confirm Masked Graph edges graph 
+Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
+[0m[[32msuccess[0m] [0mTotal time: 21 s, completed 2014/11/29 23:08:14[0m
