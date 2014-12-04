@@ -1,7 +1,7 @@
 Loading /Users/teppei_tosa/Apps/sbt/bin/sbt-launch-lib.bash
 [0m[[0minfo[0m] [0mLoading project definition from /Users/teppei_tosa/dev/spark/graphx-advent-samples/project[0m
 [0m[[0minfo[0m] [0mSet current project to graphx-advent-samples (in build file:/Users/teppei_tosa/dev/spark/graphx-advent-samples/)[0m
-[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /Users/teppei_tosa/dev/spark/graphx-advent-samples/target/scala-2.10/classes...[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/teppei_tosa/dev/spark/graphx-advent-samples/target/scala-2.10/classes...[0m
 
 Multiple main classes detected, select one to run:
 
@@ -10,21 +10,22 @@ Multiple main classes detected, select one to run:
  [3] com.teppeistudio.Day02
  [4] com.teppeistudio.Day03
  [5] com.teppeistudio.Day03_01
- [6] com.teppeistudio.Day02_01
+ [6] com.teppeistudio.Day04
+ [7] com.teppeistudio.Day02_01
 
-Enter number: 4
+Enter number: 6
 
-[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day03 [0m
-
-
-~~~~~~~~~ Confirm Vertices Internal of graph2 
-(1,Taro)
-(3,)
-(2,Jiro)
+[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day04 [0m
 
 
-~~~~~~~~~ Confirm Vertices Internal of graph3 
-(1,Taro)
-(3,None)
-(2,Jiro)
-[0m[[32msuccess[0m] [0mTotal time: 3125 s, completed 2014/12/02 23:22:38[0m
+~~~~~~~~~ Confirm Edges Internal of graph 
+Edge(1,2,(100,Mon Dec 01 00:00:00 JST 2014))
+Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
+Edge(3,1,(300,Wed Dec 03 00:00:00 JST 2014))
+
+
+~~~~~~~~~ Confirm Vertices Internal of graph 
+(1,(Taro,100))
+(3,(Sabo,300))
+(2,(Jiro,200))
+[0m[[32msuccess[0m] [0mTotal time: 43 s, completed 2014/12/04 23:23:59[0m
