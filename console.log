@@ -12,17 +12,12 @@ Multiple main classes detected, select one to run:
  [5] com.teppeistudio.Day03_01
  [6] com.teppeistudio.Day04
  [7] com.teppeistudio.Day05
- [8] com.teppeistudio.Day02_01
+ [8] com.teppeistudio.Day06
+ [9] com.teppeistudio.Day02_01
 
-Enter number: 7
+Enter number: ８[15G[K8
 
-[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day05 [0m
-
-
-~~~~~~~~~ Confirm Edges Internal of graph 
-Edge(1,2,(100,Mon Dec 01 00:00:00 JST 2014))
-Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
-Edge(3,1,(300,Wed Dec 03 00:00:00 JST 2014))
+[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day06 [0m
 
 
 ~~~~~~~~~ Confirm Vertices Internal of graph 
@@ -31,32 +26,8 @@ Edge(3,1,(300,Wed Dec 03 00:00:00 JST 2014))
 (2,(Jiro,200))
 
 
-~~~~~~~~~ Confirm Vertices Internal of graph2 
-(1,400)
-(3,1200)
-(2,800)
-
-
-~~~~~~~~~ Confirm Vertices Internal of graph3 
-Edge(1,2,100)
-Edge(2,3,200)
-Edge(3,1,300)
-
-
-~~~~~~~~~ Confirm triplets Internal of graph 
-((1,(Taro,100)),(2,(Jiro,200)),(100,Mon Dec 01 00:00:00 JST 2014))
-((2,(Jiro,200)),(3,(Sabo,300)),(200,Tue Dec 02 00:00:00 JST 2014))
-((3,(Sabo,300)),(1,(Taro,100)),(300,Wed Dec 03 00:00:00 JST 2014))
-
-
-~~~~~~~~~ Confirm Vertices Internal of graph4 
-Edge(1,2,400)
-Edge(2,3,700)
-Edge(3,1,700)
-
-
-~~~~~~~~~ Confirm Vertices Internal of newVertices 
-(1,400)
-(3,500)
-(2,300)
-[0m[[32msuccess[0m] [0mTotal time: 53 s, completed 2014/12/05 22:39:19[0m
+~~~~~~~~~ Confirm Edges Internal of graph 
+Edge(1,2,(100,Mon Dec 01 00:00:00 JST 2014))
+Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
+Edge(3,1,(300,Wed Dec 03 00:00:00 JST 2014))
+[0m[[32msuccess[0m] [0mTotal time: 144 s, completed 2014/12/06 14:23:35[0m
