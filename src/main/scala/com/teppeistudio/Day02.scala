@@ -13,7 +13,7 @@ object Day02 {
 		val conf = new SparkConf()
 		val sc = new SparkContext("local", "test", conf)
 
-		val graph = GraphLoader.edgeListFile(sc, "graphdata/day01.tsv").cache()
+		val graph = GraphLoader.edgeListFile(sc, "graphdata/day02.tsv").cache()
 
 		println("\n\n~~~~~~~~~ Confirm Edges Internal of graph ")
 		graph.edges.collect.foreach(println(_))

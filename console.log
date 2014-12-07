@@ -6,18 +6,15 @@ Loading /Users/teppei_tosa/Apps/sbt/bin/sbt-launch-lib.bash
 Multiple main classes detected, select one to run:
 
  [1] com.teppeistudio.Day04_01
- [2] com.teppeistudio.Day02_02
- [3] com.teppeistudio.Day02
- [4] com.teppeistudio.Day03
- [5] com.teppeistudio.Day03_01
- [6] com.teppeistudio.Day04
- [7] com.teppeistudio.Day05
- [8] com.teppeistudio.Day06
- [9] com.teppeistudio.Day02_01
+ [2] com.teppeistudio.Day02
+ [3] com.teppeistudio.Day03
+ [4] com.teppeistudio.Day04
+ [5] com.teppeistudio.Day05
+ [6] com.teppeistudio.Day06_08
 
-Enter number: ８[15G[K8
+Enter number: 6
 
-[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day06 [0m
+[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day06_08 [0m
 
 
 ~~~~~~~~~ Confirm Vertices Internal of graph 
@@ -30,4 +27,68 @@ Enter number: ８[15G[K8
 Edge(1,2,(100,Mon Dec 01 00:00:00 JST 2014))
 Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
 Edge(3,1,(300,Wed Dec 03 00:00:00 JST 2014))
-[0m[[32msuccess[0m] [0mTotal time: 144 s, completed 2014/12/06 14:23:35[0m
+
+
+~~~~~~~~~ Confirm filtered vertices 
+(3,(Sabo,300))
+(2,(Jiro,200))
+
+
+~~~~~~~~~ Confirm mapped vertices 
+(1,400)
+(3,1200)
+(2,800)
+
+
+~~~~~~~~~ Confirm diffed vertices 
+vertices : 3
+filteredVertices : 2
+diffedVertices : 0
+
+
+~~~~~~~~~ set A 
+(0,0)
+(1,1)
+
+
+~~~~~~~~~ set B 
+(1,1)
+(2,2)
+
+
+~~~~~~~~~ diff 
+
+
+~~~~~~~~~ Confirm leftJoined vertices 
+(1,(Taro,100,Japan))
+(3,(Sabo,300,World))
+(2,(Jiro,200,USA))
+
+
+~~~~~~~~~ Confirm innerJoined vertices 
+(1,(Taro,100,Japan))
+(2,(Jiro,200,USA))
+
+
+~~~~~~~~~ Confirm aggregateUsingIndexed vertices 
+(1,10)
+(2,41)
+
+
+~~~~~~~~~ Confirm mapped edges 
+Edge(1,2,101)
+Edge(2,3,201)
+Edge(3,1,301)
+
+
+~~~~~~~~~ Confirm reversed edges 
+Edge(1,3,(300,Wed Dec 03 00:00:00 JST 2014))
+Edge(2,1,(100,Mon Dec 01 00:00:00 JST 2014))
+Edge(3,2,(200,Tue Dec 02 00:00:00 JST 2014))
+
+
+~~~~~~~~~ Confirm innerJoined edge 
+Edge(1,2,(100,Mon Dec 01 00:00:00 JST 2014,love))
+Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014,hate))
+Edge(3,1,(300,Wed Dec 03 00:00:00 JST 2014,even))
+[0m[[32msuccess[0m] [0mTotal time: 21 s, completed 2014/12/07 15:24:54[0m

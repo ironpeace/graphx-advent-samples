@@ -6,14 +6,18 @@ import org.apache.spark.SparkContext._
 import org.apache.spark.graphx._
 import org.apache.spark.rdd.RDD
 
-object Day03_01 {
+object Day06_08 {
 
     def main(args: Array[String]) = {
+
+    	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    	// Day06 : VertexRDD と EdgeRDD とは
+    	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 		val conf = new SparkConf()
 		val sc = new SparkContext("local", "test", conf)
 
-		val vertexLines: RDD[String] = sc.textFile("graphdata/day03-01-vertices.csv")
+		val vertexLines: RDD[String] = sc.textFile("graphdata/day06-vertices.csv")
 		val v: RDD[(VertexId, (String, Long))]
 			= vertexLines.map(line => {
 				val cols = line.split(",")
@@ -21,7 +25,7 @@ object Day03_01 {
 			})
 
 		val format = new java.text.SimpleDateFormat("yyyy/MM/dd")
-		val edgeLines: RDD[String] = sc.textFile("graphdata/day03-01-edges.csv")
+		val edgeLines: RDD[String] = sc.textFile("graphdata/day06-edges.csv")
 		val e:RDD[Edge[((Long, java.util.Date))]]
 			= edgeLines.map(line => {
 				val cols = line.split(",")
@@ -40,6 +44,9 @@ object Day03_01 {
 		println("\n\n~~~~~~~~~ Confirm Edges Internal of graph ")
 		edges.collect.foreach(println(_))
 
+    	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    	// Day07 : VertexRDD
+    	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 		val filteredVertices:VertexRDD[(String, Long)]
 			= vertices.filter{ case (vid:VertexId, (name:String, value:Long)) => value > 150 }
@@ -53,10 +60,11 @@ object Day03_01 {
 		println("\n\n~~~~~~~~~ Confirm mapped vertices ")
 		mappedVertices.collect.foreach(println(_))
 
+
+		println("\n\n~~~~~~~~~ Confirm diffed vertices ")
 		// val diffedVertices:VertexRDD[(String, Long)] = filteredVertices.diff(vertices)
 		val diffedVertices:VertexRDD[(String, Long)] = vertices.diff(filteredVertices)
 
-		println("\n\n~~~~~~~~~ Confirm diffed vertices ")
 		// diffedVertices.collect.foreach(println(_))
 		println("vertices : " + vertices.count)
 		println("filteredVertices : " + filteredVertices.count)
@@ -72,10 +80,8 @@ object Day03_01 {
 		println("\n\n~~~~~~~~~ diff ")
 		diff.collect.foreach(println(_))
 
-
-
 		val verticesWithCountry: RDD[(VertexId, String)]
-			= sc.textFile("graphdata/day03-02-vertices.csv").map(line => {
+			= sc.textFile("graphdata/day07-01-vertices.csv").map(line => {
 				(line.split(",")(0).toLong, line.split(",")(1))
 			})
 
@@ -94,7 +100,7 @@ object Day03_01 {
 		innerJoinedVertices.collect.foreach(println(_))
 
 		val verticesWithNum: RDD[(VertexId, Long)]
-			= sc.textFile("graphdata/day03-03-vertices.csv").map(line => {
+			= sc.textFile("graphdata/day07-02-vertices.csv").map(line => {
 				(line.split(",")(0).toLong, line.split(",")(1).toLong)
 			})
 
@@ -103,7 +109,9 @@ object Day03_01 {
 		println("\n\n~~~~~~~~~ Confirm aggregateUsingIndexed vertices ")
 		auiVertices.collect.foreach(println(_))
 
-
+    	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    	// Day08 : EdgeRDD とは
+    	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 		val mappedEdges:EdgeRDD[Long, (String, Long)] = edges.mapValues(edge => edge.attr._1 + 1)
 
@@ -118,7 +126,7 @@ object Day03_01 {
 
 
 		val e2:RDD[Edge[String]]
-			= sc.textFile("graphdata/day03-02-edges.csv").map(line => {
+			= sc.textFile("graphdata/day08-edges.csv").map(line => {
 				val cols = line.split(",")
 				Edge(cols(0).toLong, cols(1).toLong, cols(2))
 			})
