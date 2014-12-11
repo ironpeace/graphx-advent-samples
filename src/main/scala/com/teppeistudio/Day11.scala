@@ -10,18 +10,18 @@ import scala.reflect.ClassTag
 
 object Day11 {
 
-    def main(args: Array[String]) = {
+  def main(args: Array[String]) = {
 
-		val conf = new SparkConf()
-		val sc = new SparkContext("local", "test", conf)
+    val conf = new SparkConf()
+    val sc = new SparkContext("local", "test", conf)
 
-		val graph = GraphLoader.edgeListFile(sc, "graphdata/day11.tsv").cache()
+    val graph = GraphLoader.edgeListFile(sc, "graphdata/day11.tsv").cache()
 
-		println("\n\n~~~~~~~~~ Confirm Vertices Internal of graph ")
-		graph.vertices.collect.foreach(println(_))
+    println("\n\n~~~~~~~~~ Confirm Vertices Internal of graph ")
+    graph.vertices.collect.foreach(println(_))
 
-		println("\n\n~~~~~~~~~ Confirm Edges Internal of graph ")
-		graph.edges.collect.foreach(println(_))
+    println("\n\n~~~~~~~~~ Confirm Edges Internal of graph ")
+    graph.edges.collect.foreach(println(_))
 
     val cc:Graph[Long, Int] = graph.connectedComponents
 
@@ -50,7 +50,7 @@ object Day11 {
     println("\n\n~~~~~~~~~ Confirm graph_include_vid_2 ")
     graph_include_vid_2.vertices.collect.foreach(println(_))
 
-		sc.stop
-	}
+    sc.stop
+  }
 
 }
