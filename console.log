@@ -8,64 +8,65 @@ Multiple main classes detected, select one to run:
  [1] com.teppeistudio.Day09
  [2] com.teppeistudio.Day02
  [3] com.teppeistudio.Day03
- [4] com.teppeistudio.Day10
- [5] com.teppeistudio.Day04
- [6] com.teppeistudio.Day05
- [7] com.teppeistudio.Day06_08
+ [4] com.teppeistudio.Day12
+ [5] com.teppeistudio.Day10
+ [6] com.teppeistudio.Day04
+ [7] com.teppeistudio.Day05
+ [8] com.teppeistudio.Day11
+ [9] com.teppeistudio.Day06_08
 
-Enter number: 1
+Enter number: 8
 
-[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day09 [0m
+[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day11 [0m
 
 
 ~~~~~~~~~ Confirm Vertices Internal of graph 
-(1,(Taro,100))
-(3,(Sabo,300))
-(2,(Jiro,200))
+(4,1)
+(1,1)
+(6,1)
+(3,1)
+(7,1)
+(5,1)
+(2,1)
 
 
 ~~~~~~~~~ Confirm Edges Internal of graph 
-Edge(1,2,(100,Mon Dec 01 00:00:00 JST 2014))
-Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
-Edge(3,1,(300,Wed Dec 03 00:00:00 JST 2014))
+Edge(1,2,1)
+Edge(2,3,1)
+Edge(3,1,1)
+Edge(4,5,1)
+Edge(5,6,1)
+Edge(6,7,1)
 
 
-~~~~~~~~~ Confirm Edges reversed graph 
-Edge(1,3,(300,Wed Dec 03 00:00:00 JST 2014))
-Edge(2,1,(100,Mon Dec 01 00:00:00 JST 2014))
-Edge(3,2,(200,Tue Dec 02 00:00:00 JST 2014))
+~~~~~~~~~ Confirm Vertices Connected Components 
+(4,4)
+(1,1)
+(6,4)
+(3,1)
+(7,4)
+(5,4)
+(2,1)
 
 
-~~~~~~~~~ Confirm Subgraphed vertices graph 
-(3,(Sabo,300))
-(2,(Jiro,200))
+~~~~~~~~~ Confirm Connected Components Label of Vertex id 2
+1
 
 
-~~~~~~~~~ Confirm Subgraphed edges graph 
-Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
-Edge(3,1,(300,Wed Dec 03 00:00:00 JST 2014))
+~~~~~~~~~ Confirm vertices_connected_with_vid_2
+(1,1)
+(3,1)
+(2,1)
 
 
-~~~~~~~~~ Confirm vertices of Subgraphed graph 
-(3,(Sabo,300))
-(2,(Jiro,200))
+~~~~~~~~~ Confirm vids_connected_with_vid_2
+1
+3
+2
 
 
-~~~~~~~~~ Confirm edges of Subgraphed graph 
-Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
-
-
-~~~~~~~~~ Confirm Masked Graph vertices graph 
-(3,(Sabo,300))
-(2,(Jiro,200))
-
-
-~~~~~~~~~ Confirm Masked Graph edges graph 
-Edge(2,3,(200,Tue Dec 02 00:00:00 JST 2014))
-
-
-~~~~~~~~~ Confirm merged edges graph 
-Edge(1,2,(210,Mon Dec 01 00:00:00 JST 2014))
-Edge(2,3,(410,Tue Dec 02 00:00:00 JST 2014))
-Edge(3,1,(610,Wed Dec 03 00:00:00 JST 2014))
-[0m[[32msuccess[0m] [0mTotal time: 65 s, completed 2014/12/09 8:44:45[0m
+~~~~~~~~~ Confirm graph_include_vid_2 
+(1,1)
+(3,1)
+(2,1)
+[0m[[32msuccess[0m] [0mTotal time: 19 s, completed 2014/12/11 22:36:49[0m
