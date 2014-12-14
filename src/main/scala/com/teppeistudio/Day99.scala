@@ -8,7 +8,7 @@ import org.apache.spark.rdd.RDD
 
 import scala.reflect.ClassTag
 
-object Day12 {
+object Day99 {
 
     def main(args: Array[String]) = {
 
@@ -23,9 +23,10 @@ object Day12 {
 		println("\n\n~~~~~~~~~ Confirm Edges Internal of graph ")
 		graph.edges.collect.foreach(println(_))
 
-		println("\n\n~~~~~~~~~ Confirm Vertices of Graph with PageRanl (Tol = 1.0) ")
 
 		val pg = runUntilConvergence(graph, 1.0)
+
+		println("\n\n~~~~~~~~~ Confirm Vertices of Graph with PageRanl (Tol = 1.0) ")
 		pg.vertices.collect.foreach(println(_))
 
 		// graph.pageRank(1.0).vertices.collect.foreach(println(_))
@@ -53,6 +54,14 @@ object Day12 {
       .mapVertices( (id, attr) => (0.0, 0.0) )
       .cache()
 
+
+	println("\n\n~~~~~~~~~ Confirm Vertices Internal of initial runUntilConvergence ")
+	pagerankGraph.vertices.collect.foreach(println(_))
+
+	println("\n\n~~~~~~~~~ Confirm Edges Internal of initial runUntilConvergence ")
+	pagerankGraph.edges.collect.foreach(println(_))
+
+
     // Define the three functions needed to implement PageRank in the GraphX
     // version of Pregel
     def vertexProgram(id: VertexId, attr: (Double, Double), msgSum: Double): (Double, Double) = {
@@ -73,6 +82,7 @@ object Day12 {
 
     // The initial message received by all vertices in PageRank
     val initialMessage = resetProb / (1.0 - resetProb)
+    println("initialMessage : " + initialMessage)
 
     // Execute a dynamic version of Pregel.
     Pregel(pagerankGraph, initialMessage, activeDirection = EdgeDirection.Out)(
