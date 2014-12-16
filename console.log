@@ -1,7 +1,7 @@
 Loading /Users/teppei_tosa/Apps/sbt/bin/sbt-launch-lib.bash
 [0m[[0minfo[0m] [0mLoading project definition from /Users/teppei_tosa/dev/spark/graphx-advent-samples/project[0m
 [0m[[0minfo[0m] [0mSet current project to graphx-advent-samples (in build file:/Users/teppei_tosa/dev/spark/graphx-advent-samples/)[0m
-[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /Users/teppei_tosa/dev/spark/graphx-advent-samples/target/scala-2.10/classes...[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/teppei_tosa/dev/spark/graphx-advent-samples/target/scala-2.10/classes...[0m
 
 Multiple main classes detected, select one to run:
 
@@ -15,19 +15,18 @@ Multiple main classes detected, select one to run:
  [8] com.teppeistudio.Day05
  [9] com.teppeistudio.Day11
  [10] com.teppeistudio.Day06_08
+ [11] com.teppeistudio.Day15
+ [12] com.teppeistudio.Day14
 
-Enter number: 1
+Enter number: 11
 
-[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day13 [0m
+[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day15 [0m
 
 
 ~~~~~~~~~ Confirm Vertices Internal of graph 
 (4,1)
 (1,1)
-(6,1)
 (3,1)
-(8,1)
-(7,1)
 (5,1)
 (2,1)
 
@@ -36,21 +35,15 @@ Enter number: 1
 Edge(1,2,1)
 Edge(1,4,1)
 Edge(2,3,1)
-Edge(2,8,1)
-Edge(3,5,1)
-Edge(3,7,1)
-Edge(4,3,1)
+Edge(4,2,1)
 Edge(4,5,1)
-Edge(5,6,1)
-Edge(6,7,1)
-Edge(8,7,1)
+Edge(5,3,1)
 
 
-~~~~~~~~~ Confirm Vertices of friends 
-(4,1)
-(1,2)
-(3,0)
-(8,0)
-(5,0)
-(2,1)
-[0m[[32msuccess[0m] [0mTotal time: 36 s, completed 2014/12/14 21:00:09[0m
+~~~~~~~~~ Confirm Vertices of graphWithDistance 
+(4,List((4,0), (1,1)))
+(1,List((1,0)))
+(3,List((5,1), (1,2), (2,1), (3,0), (4,2)))
+(5,List((5,0), (4,1), (1,2)))
+(2,List((2,0), (4,1), (1,1)))
+[0m[[32msuccess[0m] [0mTotal time: 62 s, completed 2014/12/15 8:25:27[0m
