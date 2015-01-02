@@ -7,198 +7,157 @@ Multiple main classes detected, select one to run:
 
  [1] com.teppeistudio.Day13
  [2] com.teppeistudio.Day09
- [3] com.teppeistudio.Day02
- [4] com.teppeistudio.Day03
- [5] com.teppeistudio.Day99
- [6] com.teppeistudio.Day10
- [7] com.teppeistudio.Day04
- [8] com.teppeistudio.Day05
- [9] com.teppeistudio.Day11
- [10] com.teppeistudio.Day06_08
- [11] com.teppeistudio.Day15
- [12] com.teppeistudio.Day16
- [13] com.teppeistudio.Day14
+ [3] com.teppeistudio.Day17
+ [4] com.teppeistudio.Day02
+ [5] com.teppeistudio.Day03
+ [6] com.teppeistudio.Day99
+ [7] com.teppeistudio.Day10
+ [8] com.teppeistudio.Day04
+ [9] com.teppeistudio.Day05
+ [10] com.teppeistudio.Day11
+ [11] com.teppeistudio.Day06_08
+ [12] com.teppeistudio.Day15
+ [13] com.teppeistudio.Day16
+ [14] com.teppeistudio.Day14
 
-Enter number: 11[16G[K2
+Enter number: 3
 
-[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day16 [0m
-
-
-~~~~~~~~~ Confirm Vertices Internal of graph1 
-(4,2)
-(1,1)
-(6,2)
-(3,1)
-(5,2)
-(2,1)
---- edgesCnt : 7.0
------- edgesCntOfCluster : 3.0
------- edgesCntOfClusterRate : 0.42857143
---------- edgesCntBetweenClusters : 1.0(1 - 2)
---------- edgesCntBetweenClustersRate : 0.14285715
------- edgesCntBetweenClustersRateSum : 0.14285715
------- edgesCntOfCluster : 3.0
------- edgesCntOfClusterRate : 0.42857143
---------- edgesCntBetweenClusters : 1.0(2 - 1)
---------- edgesCntBetweenClustersRate : 0.14285715
------- edgesCntBetweenClustersRateSum : 0.14285715
---- mod : 0.81632656
-modurality : 0.81632656
+[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day17 [0m
 
 
-~~~~~~~~~ Confirm Vertices Internal of graph2 
-(4,2)
-(1,1)
-(6,2)
-(3,2)
-(5,2)
-(2,2)
---- edgesCnt : 7.0
------- edgesCntOfCluster : 0.0
------- edgesCntOfClusterRate : 0.0
---------- edgesCntBetweenClusters : 2.0(1 - 2)
---------- edgesCntBetweenClustersRate : 0.2857143
------- edgesCntBetweenClustersRateSum : 0.2857143
------- edgesCntOfCluster : 5.0
------- edgesCntOfClusterRate : 0.71428573
---------- edgesCntBetweenClusters : 2.0(2 - 1)
---------- edgesCntBetweenClustersRate : 0.2857143
------- edgesCntBetweenClustersRateSum : 0.2857143
---- mod : 0.5510204
-modurality : 0.5510204
-
-
-~~~~~~~~~ Confirm Vertices Internal of graph3 
+~~~~~~~~~ Confirm Vertices Internal of graph 
 (4,1)
+(0,1)
 (1,1)
-(6,1)
 (3,1)
-(5,1)
 (2,1)
---- edgesCnt : 7.0
------- edgesCntOfCluster : 7.0
------- edgesCntOfClusterRate : 1.0
------- edgesCntBetweenClustersRateSum : 0.0
---- mod : 1.0
-modurality : 1.0
+vplog of [4]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+msg ~~~~~~~~~~~~
+(3,0,Set(Set()))
+(1,0,Set(Set()))
+vplog of [4]~~~~~~~~~~~~ end
+vplog of [0]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+msg ~~~~~~~~~~~~
+(1,0,Set(Set()))
+vplog of [0]~~~~~~~~~~~~ end
+vplog of [1]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+msg ~~~~~~~~~~~~
+(0,0,Set(Set()))
+(2,0,Set(Set()))
+(4,0,Set(Set()))
+vplog of [1]~~~~~~~~~~~~ end
+vplog of [3]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+msg ~~~~~~~~~~~~
+(2,0,Set(Set()))
+(4,0,Set(Set()))
+vplog of [3]~~~~~~~~~~~~ end
+vplog of [2]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+msg ~~~~~~~~~~~~
+(1,0,Set(Set()))
+(3,0,Set(Set()))
+vplog of [2]~~~~~~~~~~~~ end
+vplog of [4]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+(1,1,Set(Set()))
+(3,1,Set(Set()))
+msg ~~~~~~~~~~~~
+(2,1,Set(Set(3)))
+(2,1,Set(Set(1)))
+(0,1,Set(Set(1)))
+vplog of [4]~~~~~~~~~~~~ end
+vplog of [0]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+(1,1,Set(Set()))
+msg ~~~~~~~~~~~~
+(2,1,Set(Set(1)))
+(4,1,Set(Set(1)))
+vplog of [0]~~~~~~~~~~~~ end
+vplog of [1]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+(2,1,Set(Set()))
+(4,1,Set(Set()))
+(0,1,Set(Set()))
+msg ~~~~~~~~~~~~
+(3,1,Set(Set(2)))
+(3,1,Set(Set(4)))
+vplog of [1]~~~~~~~~~~~~ end
+vplog of [3]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+(2,1,Set(Set()))
+(4,1,Set(Set()))
+msg ~~~~~~~~~~~~
+(1,1,Set(Set(2)))
+(1,1,Set(Set(4)))
+vplog of [3]~~~~~~~~~~~~ end
+vplog of [2]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+(1,1,Set(Set()))
+(3,1,Set(Set()))
+msg ~~~~~~~~~~~~
+(4,1,Set(Set(1)))
+(0,1,Set(Set(1)))
+(4,1,Set(Set(3)))
+vplog of [2]~~~~~~~~~~~~ end
+vplog of [0]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+(2,2,Set(Set(1)))
+(4,2,Set(Set(1)))
+(1,1,Set(Set()))
+msg ~~~~~~~~~~~~
+(3,2,Set(Set(2, 1), Set(4, 1)))
+vplog of [0]~~~~~~~~~~~~ end
+vplog of [3]~~~~~~~~~~~~ start
+attr ~~~~~~~~~~~~
+(2,1,Set(Set()))
+(4,1,Set(Set()))
+(1,2,Set(Set(2), Set(4)))
+msg ~~~~~~~~~~~~
+(0,2,Set(Set(1, 2)))
+(0,2,Set(Set(1, 4)))
+vplog of [3]~~~~~~~~~~~~ end
 
 
-~~~~~~~~~ Confirm Vertices Internal of graph4 
-(4,4)
-(1,1)
-(6,6)
-(3,3)
-(5,5)
-(2,2)
---- edgesCnt : 7.0
------- edgesCntOfCluster : 0.0
------- edgesCntOfClusterRate : 0.0
---------- edgesCntBetweenClusters : 0.0(4 - 1)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 1.0(4 - 6)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 1.0(4 - 3)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 1.0(4 - 5)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(4 - 2)
---------- edgesCntBetweenClustersRate : 0.0
------- edgesCntBetweenClustersRateSum : 0.42857146
------- edgesCntOfCluster : 0.0
------- edgesCntOfClusterRate : 0.0
---------- edgesCntBetweenClusters : 0.0(1 - 4)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 0.0(1 - 6)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 1.0(1 - 3)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(1 - 5)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 1.0(1 - 2)
---------- edgesCntBetweenClustersRate : 0.14285715
------- edgesCntBetweenClustersRateSum : 0.2857143
------- edgesCntOfCluster : 0.0
------- edgesCntOfClusterRate : 0.0
---------- edgesCntBetweenClusters : 1.0(6 - 4)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(6 - 1)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 0.0(6 - 3)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 1.0(6 - 5)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(6 - 2)
---------- edgesCntBetweenClustersRate : 0.0
------- edgesCntBetweenClustersRateSum : 0.2857143
------- edgesCntOfCluster : 0.0
------- edgesCntOfClusterRate : 0.0
---------- edgesCntBetweenClusters : 1.0(3 - 4)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 1.0(3 - 1)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(3 - 6)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 0.0(3 - 5)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 1.0(3 - 2)
---------- edgesCntBetweenClustersRate : 0.14285715
------- edgesCntBetweenClustersRateSum : 0.42857146
------- edgesCntOfCluster : 0.0
------- edgesCntOfClusterRate : 0.0
---------- edgesCntBetweenClusters : 1.0(5 - 4)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(5 - 1)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 1.0(5 - 6)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(5 - 3)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 0.0(5 - 2)
---------- edgesCntBetweenClustersRate : 0.0
------- edgesCntBetweenClustersRateSum : 0.2857143
------- edgesCntOfCluster : 0.0
------- edgesCntOfClusterRate : 0.0
---------- edgesCntBetweenClusters : 0.0(2 - 4)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 1.0(2 - 1)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(2 - 6)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 1.0(2 - 3)
---------- edgesCntBetweenClustersRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(2 - 5)
---------- edgesCntBetweenClustersRate : 0.0
------- edgesCntBetweenClustersRateSum : 0.2857143
---- mod : -0.6938777
-modurality : -0.6938777
-(4,2)
-(1,1)
-(6,3)
-(3,2)
-(5,3)
-(2,1)
---- edgesCnt : 7.0
------- edgesCntOfCluster : 1.0
------- edgesCntOfClusterRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(1 - 3)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 2.0(1 - 2)
---------- edgesCntBetweenClustersRate : 0.2857143
------- edgesCntBetweenClustersRateSum : 0.2857143
------- edgesCntOfCluster : 1.0
------- edgesCntOfClusterRate : 0.14285715
---------- edgesCntBetweenClusters : 0.0(3 - 1)
---------- edgesCntBetweenClustersRate : 0.0
---------- edgesCntBetweenClusters : 2.0(3 - 2)
---------- edgesCntBetweenClustersRate : 0.2857143
------- edgesCntBetweenClustersRateSum : 0.2857143
------- edgesCntOfCluster : 1.0
------- edgesCntOfClusterRate : 0.14285715
---------- edgesCntBetweenClusters : 2.0(2 - 1)
---------- edgesCntBetweenClustersRate : 0.2857143
---------- edgesCntBetweenClusters : 2.0(2 - 3)
---------- edgesCntBetweenClustersRate : 0.2857143
------- edgesCntBetweenClustersRateSum : 0.5714286
---- mod : -0.061224505
-modurality : -0.061224505
-[0m[[32msuccess[0m] [0mTotal time: 29 s, completed 2014/12/21 15:35:37[0m
+~~~~~~~~~ Confirm Vertices Internal of mediation 
+(4,Set((2,2,Set(Set(3), Set(1))), (1,1,Set(Set())), (3,1,Set(Set())), (0,2,Set(Set(1)))))
+(0,Set((2,2,Set(Set(1))), (4,2,Set(Set(1))), (1,1,Set(Set())), (3,3,Set(Set(2, 1), Set(4, 1)))))
+(1,Set((2,1,Set(Set())), (4,1,Set(Set())), (3,2,Set(Set(2), Set(4))), (0,1,Set(Set()))))
+(3,Set((2,1,Set(Set())), (4,1,Set(Set())), (1,2,Set(Set(2), Set(4))), (0,3,Set(Set(1, 4), Set(1, 2)))))
+(2,Set((4,2,Set(Set(3), Set(1))), (1,1,Set(Set())), (3,1,Set(Set())), (0,2,Set(Set(1)))))
+
+
+~~~~~~~~~ Confirm Routes 
+(Set(1, 3),Set(Set(2), Set(4)))
+(Set(4, 0),Set(Set(1)))
+(Set(0, 1),Set(Set()))
+(Set(4, 1),Set(Set()))
+(Set(1, 2),Set(Set()))
+(Set(4, 2),Set(Set(3), Set(1)))
+(Set(0, 3),Set(Set(2, 1), Set(4, 1)))
+(Set(3, 2),Set(Set()))
+(Set(4, 3),Set(Set()))
+(Set(0, 2),Set(Set(1)))
+    4 :: chld ; 1.0, mthr : 2.0
+    4 :: chld ; 1.0, mthr : 2.0
+ 媒介数 4 : 1.0
+ 標準化 4 : 0.16666667
+ 媒介数 0 : 0.0
+ 標準化 0 : 0.0
+    1 :: chld ; 1.0, mthr : 1.0
+    1 :: chld ; 1.0, mthr : 2.0
+    1 :: chld ; 2.0, mthr : 2.0
+    1 :: chld ; 1.0, mthr : 1.0
+ 媒介数 1 : 3.5
+ 標準化 1 : 0.5833333
+    3 :: chld ; 1.0, mthr : 2.0
+ 媒介数 3 : 0.5
+ 標準化 3 : 0.083333336
+    2 :: chld ; 1.0, mthr : 2.0
+    2 :: chld ; 1.0, mthr : 2.0
+ 媒介数 2 : 1.0
+ 標準化 2 : 0.16666667
+[0m[[32msuccess[0m] [0mTotal time: 25 s, completed 2015/01/03 0:33:32[0m
