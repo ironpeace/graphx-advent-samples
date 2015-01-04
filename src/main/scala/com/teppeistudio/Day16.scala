@@ -15,7 +15,7 @@ object Day16 {
 		val sc = new SparkContext("local", "test", conf)
 
 	    val graph:Graph[Int, Int]
-	    	= GraphLoader.edgeListFile(sc, "graphdata/day16.tsv").cache()
+	    	= GraphLoader.edgeListFile(sc, "graphdata/day16_1.tsv").cache()
 
 	    // 綺麗にクラスタリングされたパターン
 	    val graph1 = graph.mapVertices{ case(vid:Long, attr:Int) => if(vid < 4) 1 else 2 }
@@ -54,52 +54,84 @@ object Day16 {
 		graph5.vertices.collect.foreach(println(_))
 		println("modurality : " + modurality(graph5))
 
+	    val graph6:Graph[Int, Int]
+	    	= GraphLoader.edgeListFile(sc, "graphdata/day16_2.tsv").cache()
+
+	    // 綺麗にクラスタリングされたパターン
+	    val graph7 = graph6.mapVertices{ 
+	    	case(vid:Long, attr:Int) => {
+	    		if(0 < vid && vid < 4) 1 
+	    		else if(3 < vid && vid < 7) 2
+	    		else 3
+	    	}
+	    }
+
+		println("\n\n~~~~~~~~~ Confirm Vertices Internal of graph7 ")
+		graph7.vertices.collect.foreach(println(_))
+		println("modurality : " + modurality(graph7))
 
 		sc.stop
 	}
 
 	def modurality(graph:Graph[Int, Int]):Float = {
-		val edgesCnt:Float = graph.edges.count.toFloat
 
-		println("--- edgesCnt : " + edgesCnt)
-
-		val clusters:Array[Int] = graph.vertices.map(v => (v._2,1)).groupBy(g => g._1).map(g => g._1).collect
-
+		// クラスタ内のEdge数を取得（双方向で計上するので２倍しておく）
 		def edgesCntOfCluster(graph:Graph[Int, Int], cluster:Int):Float = {
-			graph.subgraph(vpred = (vid, attr) => attr == cluster).edges.count.toFloat
+			graph.subgraph(vpred = (vid, attr) => attr == cluster).edges.count.toFloat * 2
 		}
 
-		def edgesCntBetweenClusters(graph:Graph[Int, Int], clusterA:Int, clusterB:Int):Float = {
+		// クラスタ間にまたがるEdge数を取得（これは重複カウントしない）
+		def edgesCntBetweenClusters(graph:Graph[Int, Int], clusterAandB:Set[Int]):Float = {
+			if(clusterAandB.size != 2) throw new Exception("Args Set of clusterAandB must be size 2")
 			graph.subgraph(epred = { edge => 
-				if(edge.srcAttr == clusterA && edge.dstAttr == clusterB) true
-				else if(edge.srcAttr == clusterB && edge.dstAttr == clusterA) true
+				if(edge.srcAttr == clusterAandB.head && edge.dstAttr == clusterAandB.tail.head) true
+				else if(edge.srcAttr == clusterAandB.tail.head && edge.dstAttr == clusterAandB.head) true
 				else false
 			}).edges.count.toFloat
 		}
 
-		var mod:Float = 0.0F
-		for( c1 <- clusters ){
-			val ecoc = edgesCntOfCluster(graph, c1)
-			println("------ edgesCntOfCluster : " + ecoc)
-			val edgesCntOfClusterRate:Float =  ecoc / edgesCnt
-			println("------ edgesCntOfClusterRate : " + edgesCntOfClusterRate)
-
-			var edgesCntBetweenClustersRateSum:Float = 0.0F
-			for( c2 <- clusters ){
-				if(c1 != c2) {
-					val ecbc = edgesCntBetweenClusters(graph, c1, c2)
-					println("--------- edgesCntBetweenClusters : " + ecbc + "(" + c1 + " - " + c2 + ")")
-					val edgesCntBetweenClustersRate:Float =  ecbc / edgesCnt
-					println("--------- edgesCntBetweenClustersRate : " + edgesCntBetweenClustersRate)
-					edgesCntBetweenClustersRateSum = edgesCntBetweenClustersRateSum + edgesCntBetweenClustersRate
-				}
-			}
-			println("------ edgesCntBetweenClustersRateSum : " + edgesCntBetweenClustersRateSum)
-
-			mod = mod + (edgesCntOfClusterRate - edgesCntBetweenClustersRateSum * edgesCntBetweenClustersRateSum)
+		def clusterPairsContains(clusterPairs:Set[Set[Int]], cluster:Int):Set[Set[Int]] = {
+			clusterPairs.filter(cp => cp.contains(cluster))
 		}
-		println("--- mod : " + mod )
 
+		// グラフ内Edge総数（双方向で計上するので２倍しておく）
+		val edgesCnt:Float = graph.edges.count.toFloat * 2
+		// println("--- edgesCnt : " + edgesCnt)
+
+		// クラスタIDのリストを取得する
+		val clusters:Array[Int] = graph.vertices.map(v => (v._2,1)).groupBy(g => g._1).map(g => g._1).collect
+
+		// println("--- clusters")
+		clusters.foreach(println(_))
+
+		var clusterPairs = Set[Set[Int]]()
+		for( c1 <- clusters ) yield {
+			for( c2 <- clusters ) {
+				if(c1 != c2) clusterPairs = clusterPairs + Set(c1, c2)
+			}
+		}
+		// println("--- clusterPairs.size : " + clusterPairs.size)
+		// println("--- clusterPairs")
+		clusterPairs.foreach(println(_))
+
+		var mod:Float = 0.0F
+		for( c <- clusters ){
+			val ecoc = edgesCntOfCluster(graph, c)
+			// println("------ edgesCntOfCluster : " + ecoc)
+
+			var aii = ecoc / edgesCnt
+
+			val cpc = clusterPairsContains(clusterPairs, c)
+
+			for(cp <- cpc) {
+				val ecbc = edgesCntBetweenClusters(graph, cp)
+				aii = aii + (ecbc / edgesCnt)
+			}
+
+			mod = mod + (( ecoc / edgesCnt ) - ( aii * aii))
+		}
+
+		// println("--- mod : " + mod )
 		return mod
 	}
 }

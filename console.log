@@ -20,144 +20,107 @@ Multiple main classes detected, select one to run:
  [13] com.teppeistudio.Day16
  [14] com.teppeistudio.Day14
 
-Enter number: 3
+Enter number: 13][17G[K
 
-[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day17 [0m
+[0m[[0minfo[0m] [0mRunning com.teppeistudio.Day16 [0m
 
 
-~~~~~~~~~ Confirm Vertices Internal of graph 
-(4,1)
-(0,1)
+~~~~~~~~~ Confirm Vertices Internal of graph1 
+(4,2)
 (1,1)
+(6,2)
 (3,1)
+(5,2)
 (2,1)
-vplog of [4]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-msg ~~~~~~~~~~~~
-(3,0,Set(Set()))
-(1,0,Set(Set()))
-vplog of [4]~~~~~~~~~~~~ end
-vplog of [0]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-msg ~~~~~~~~~~~~
-(1,0,Set(Set()))
-vplog of [0]~~~~~~~~~~~~ end
-vplog of [1]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-msg ~~~~~~~~~~~~
-(0,0,Set(Set()))
-(2,0,Set(Set()))
-(4,0,Set(Set()))
-vplog of [1]~~~~~~~~~~~~ end
-vplog of [3]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-msg ~~~~~~~~~~~~
-(2,0,Set(Set()))
-(4,0,Set(Set()))
-vplog of [3]~~~~~~~~~~~~ end
-vplog of [2]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-msg ~~~~~~~~~~~~
-(1,0,Set(Set()))
-(3,0,Set(Set()))
-vplog of [2]~~~~~~~~~~~~ end
-vplog of [4]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-(1,1,Set(Set()))
-(3,1,Set(Set()))
-msg ~~~~~~~~~~~~
-(2,1,Set(Set(3)))
-(2,1,Set(Set(1)))
-(0,1,Set(Set(1)))
-vplog of [4]~~~~~~~~~~~~ end
-vplog of [0]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-(1,1,Set(Set()))
-msg ~~~~~~~~~~~~
-(2,1,Set(Set(1)))
-(4,1,Set(Set(1)))
-vplog of [0]~~~~~~~~~~~~ end
-vplog of [1]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-(2,1,Set(Set()))
-(4,1,Set(Set()))
-(0,1,Set(Set()))
-msg ~~~~~~~~~~~~
-(3,1,Set(Set(2)))
-(3,1,Set(Set(4)))
-vplog of [1]~~~~~~~~~~~~ end
-vplog of [3]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-(2,1,Set(Set()))
-(4,1,Set(Set()))
-msg ~~~~~~~~~~~~
-(1,1,Set(Set(2)))
-(1,1,Set(Set(4)))
-vplog of [3]~~~~~~~~~~~~ end
-vplog of [2]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-(1,1,Set(Set()))
-(3,1,Set(Set()))
-msg ~~~~~~~~~~~~
-(4,1,Set(Set(1)))
-(0,1,Set(Set(1)))
-(4,1,Set(Set(3)))
-vplog of [2]~~~~~~~~~~~~ end
-vplog of [0]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-(2,2,Set(Set(1)))
-(4,2,Set(Set(1)))
-(1,1,Set(Set()))
-msg ~~~~~~~~~~~~
-(3,2,Set(Set(2, 1), Set(4, 1)))
-vplog of [0]~~~~~~~~~~~~ end
-vplog of [3]~~~~~~~~~~~~ start
-attr ~~~~~~~~~~~~
-(2,1,Set(Set()))
-(4,1,Set(Set()))
-(1,2,Set(Set(2), Set(4)))
-msg ~~~~~~~~~~~~
-(0,2,Set(Set(1, 2)))
-(0,2,Set(Set(1, 4)))
-vplog of [3]~~~~~~~~~~~~ end
+1
+2
+Set(1, 2)
+modurality : 0.35714287
 
 
-~~~~~~~~~ Confirm Vertices Internal of mediation 
-(4,Set((2,2,Set(Set(3), Set(1))), (1,1,Set(Set())), (3,1,Set(Set())), (0,2,Set(Set(1)))))
-(0,Set((2,2,Set(Set(1))), (4,2,Set(Set(1))), (1,1,Set(Set())), (3,3,Set(Set(2, 1), Set(4, 1)))))
-(1,Set((2,1,Set(Set())), (4,1,Set(Set())), (3,2,Set(Set(2), Set(4))), (0,1,Set(Set()))))
-(3,Set((2,1,Set(Set())), (4,1,Set(Set())), (1,2,Set(Set(2), Set(4))), (0,3,Set(Set(1, 4), Set(1, 2)))))
-(2,Set((4,2,Set(Set(3), Set(1))), (1,1,Set(Set())), (3,1,Set(Set())), (0,2,Set(Set(1)))))
+~~~~~~~~~ Confirm Vertices Internal of graph2 
+(4,2)
+(1,1)
+(6,2)
+(3,2)
+(5,2)
+(2,2)
+1
+2
+Set(1, 2)
+modurality : -0.04081632
 
 
-~~~~~~~~~ Confirm Routes 
-(Set(1, 3),Set(Set(2), Set(4)))
-(Set(4, 0),Set(Set(1)))
-(Set(0, 1),Set(Set()))
-(Set(4, 1),Set(Set()))
-(Set(1, 2),Set(Set()))
-(Set(4, 2),Set(Set(3), Set(1)))
-(Set(0, 3),Set(Set(2, 1), Set(4, 1)))
-(Set(3, 2),Set(Set()))
-(Set(4, 3),Set(Set()))
-(Set(0, 2),Set(Set(1)))
-    4 :: chld ; 1.0, mthr : 2.0
-    4 :: chld ; 1.0, mthr : 2.0
- 媒介数 4 : 1.0
- 標準化 4 : 0.16666667
- 媒介数 0 : 0.0
- 標準化 0 : 0.0
-    1 :: chld ; 1.0, mthr : 1.0
-    1 :: chld ; 1.0, mthr : 2.0
-    1 :: chld ; 2.0, mthr : 2.0
-    1 :: chld ; 1.0, mthr : 1.0
- 媒介数 1 : 3.5
- 標準化 1 : 0.5833333
-    3 :: chld ; 1.0, mthr : 2.0
- 媒介数 3 : 0.5
- 標準化 3 : 0.083333336
-    2 :: chld ; 1.0, mthr : 2.0
-    2 :: chld ; 1.0, mthr : 2.0
- 媒介数 2 : 1.0
- 標準化 2 : 0.16666667
-[0m[[32msuccess[0m] [0mTotal time: 25 s, completed 2015/01/03 0:33:32[0m
+~~~~~~~~~ Confirm Vertices Internal of graph3 
+(4,1)
+(1,1)
+(6,1)
+(3,1)
+(5,1)
+(2,1)
+1
+modurality : 0.0
+
+
+~~~~~~~~~ Confirm Vertices Internal of graph4 
+(4,4)
+(1,1)
+(6,6)
+(3,3)
+(5,5)
+(2,2)
+4
+1
+6
+3
+5
+2
+Set(6, 2)
+Set(6, 5)
+Set(1, 3)
+Set(4, 5)
+Set(1, 6)
+Set(1, 2)
+Set(1, 5)
+Set(3, 2)
+Set(6, 3)
+Set(4, 3)
+Set(4, 2)
+Set(4, 1)
+Set(4, 6)
+Set(3, 5)
+Set(5, 2)
+modurality : -0.17346942
+(4,2)
+(1,1)
+(6,3)
+(3,2)
+(5,3)
+(2,1)
+1
+3
+2
+Set(1, 3)
+Set(1, 2)
+Set(3, 2)
+modurality : 0.08163263
+
+
+~~~~~~~~~ Confirm Vertices Internal of graph7 
+(4,2)
+(1,1)
+(6,2)
+(3,1)
+(7,3)
+(9,3)
+(8,3)
+(5,2)
+(2,1)
+1
+3
+2
+Set(1, 3)
+Set(1, 2)
+Set(3, 2)
+modurality : 0.4166667
+[0m[[32msuccess[0m] [0mTotal time: 30 s, completed 2015/01/04 21:08:16[0m
